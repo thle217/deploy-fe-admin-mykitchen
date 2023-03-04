@@ -1,8 +1,9 @@
 import axios from "axios";
 
+
 const productAPI = {
     getAll: () => {
-        return axios.get(`/api/product/get-all`);
+        return axios.get(`https://be-api-mykitchen.onrender.com/api/product/get-all`);
     },
     getById: (product_id) => {
         return axios.get(`/api/product/${product_id}`);
